@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="to-do-list_favicon.png">
+    <meta name="viewreport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
+  </head>
+  <body>
+    <header class="heading"><h1><i id="listIcon" class="uil uil-list-ul"></i>To-Do-List</h1></header>
+
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p>Add a new Task</p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" placeholder="Title">
+            </div>
+            <div class="row description">
+              <label>Description</label>
+              <textarea placeholder="i need to do..." ></textarea>
+            </div>
+            <button class="save-btn">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Add new Task</p>
+      </li>
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+      </div>
+      <ul class="task-box"></ul>
+
+    </div>
+
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
